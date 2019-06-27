@@ -1,0 +1,62 @@
+---
+title: Home page
+---
+<div class="container mt-3">
+    <h3>About us</h3>
+    <hr>
+    <p>ClubAI is an independent team of passionate professionals and enthusiasts of applied 
+    Computer Vision and Artificial Intelligence. We are a union of friends inspired by the 
+    technologies of the future. Our collaboration is aimed at shaping the AI revolution through 
+    conducting research, contributing to open source and spreading knowledge.</p>
+    <p>The core of our team is formed by a natural curiosity in combination with a fundamental 
+    interdisciplinary education. This gives us the inspiration to implement state-of-the-art 
+    machine learning pipelines and push the boundaries of applied Artificial Intelligence.</p>
+</div>
+
+<div class="container mt-5">
+    <h3>Projects</h3>
+    <hr>
+    <div class="row justify-content-around small">
+        {% for project in site.projects %}
+            <!-- Center the last column if it's odd -->
+            {% assign column_oddity = forloop.index | modulo: 2 %}
+            {% if forloop.last and column_oddity == 1 %}
+            <div class="col-sm-4 offset-sm-3 text-center">   
+            {% else %}
+            <div class="col-sm-4 text-center">
+            {% endif %}
+                <a href="{{ project.url }}" class="text-body text-decoration-none" {% if project.github %}github="{{ project.github }}"{% endif %}>
+                    <img src="assets/images/{{ project.thumbnail }}" class="avatar rounded-circle">
+                    <h5 class="my-2">{{ project.title }}</h4>
+                    <p class="mt-2 mb-0">{{ project.short_description }}</p>
+                </a>
+                {% if project.github %}
+                    <a href="https://github.com/{{ site.github_username }}/{{ project.github }}/stargazers" class="btn btn-light"><i class="fas fa-star"></i></a>
+                    <a href="https://github.com/{{ site.github_username }}/{{ project.github }}/network" class="btn btn-light"><i class="fas fa-code-branch"></i></a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h3>Team</h3>
+    <hr>
+    <div class="row text-center">
+        {% for member in site.team %}
+            <div class="col-sm-4">
+                <a href="/team.html#{{ member.short_name }}" class="text-body text-decoration-none">
+                    <img src="assets/images/{{ member.avatar }}" class="avatar rounded-circle">
+                    <p class="mt-3 mb-0">{{ member.full_name }}</p>
+                </a>
+                <p>
+                    {% if member.github %}<a href="{{ member.github }}" class="fab fa-github btn btn-light"></a>{% endif %}
+                    {% if member.kaggle %}<a href="{{ member.kaggle }}" class="fab fa-kaggle btn btn-light"></a>{% endif %}
+                    {% if member.linkedin %}<a href="{{ member.linkedin }}" class="fab fa-linkedin btn btn-light"></a>{% endif %}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/assets/js/get_github_repo_stats.js"></script>

@@ -1,0 +1,18 @@
+---
+title: Projects
+---
+<div class="media-list container">
+    <h3 class="mt-3 mb-5">Our projects:</h3>
+    {% for project in site.projects %}            
+        <a href="{{ project.url }}" class="btn media-list-item btn-block py-3 mb-3">
+            <div class="media">
+                <img src="/assets/images/{{ project.thumbnail }}" class="d-none d-sm-block mr-3">
+                <div class="media-body text-body text-left">
+                    <h4 class="text-info mb-1">{{ project.title }}</h4>
+                    {{ project.short_description }}
+                    <p class="text-info">>>></p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>

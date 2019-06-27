@@ -1,0 +1,35 @@
+title: OniroAI
+description: "Home page of ClubAI project"
+
+github_username: OniroAI
+
+collections:
+  projects:
+    output: true
+  features:
+    output: true
+  team:
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+    
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+    
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "project"

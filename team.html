@@ -1,0 +1,29 @@
+---
+title: Team
+---
+<div class="container mt-3">
+    {% for member in site.team %}
+        <div class="row my-3" id="{{ member.short_name }}">
+            <div class="col-sm-4 text-center text-sm-right">
+                <img src="assets/images/{{ member.avatar }}" class="avatar rounded-circle">
+            </div>
+            <div class="col-sm-8">
+                <div class="row justify-content-center text-sm-left text-center mt-3">
+                    <div class="col-auto">
+                        <h5 class="mb-0">{{ member.full_name }}</h5>
+                    </div>
+                    <div class="col order-3 order-sm-2">
+                        {% if member.github %}<a href="{{ member.github }}" class="fab fa-github btn btn-light"></a>{% endif %}
+                        {% if member.kaggle %}<a href="{{ member.kaggle }}" class="fab fa-kaggle btn btn-light"></a>{% endif %}
+                        {% if member.linkedin %}<a href="{{ member.linkedin }}" class="fab fa-linkedin btn btn-light"></a>{% endif %}
+                    </div>
+                    <div class="col-12 order-2 order-sm-3 font-italic small">
+                        {{ member.tags | join: " | " }}
+                    </div>
+                </div>
+                <hr>
+                <p>{{ member.content }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,19 @@
+---
+title: Blog
+---
+<div class="media-list container">
+    <h3 class="mt-3 mb-5">Latest posts:</h3>
+    {% for post in site.posts %}            
+        <a href="{{ post.url }}" class="btn media-list-item btn-block py-3 mb-3">
+            <div class="media">
+                <img src="/assets/images/{{ post.thumbnail }}" class="d-none d-sm-block mr-3">
+                <div class="media-body text-body text-left">
+                    <h4 class="text-info mb-1">{{ post.title }}</h4>
+                    <p><em>{{ post.date | date_to_string }} - {{ post.author }}</em></p>
+                    {{ post.excerpt }}
+                    <p class="text-info">>>></p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>

@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="post container my-3">
+    <h3>{{ page.title }}</h3>
+    <p><em>{{ page.date | date_to_string }} - <a href="/team.html#{{ page.author }}" class="text-info">{{ page.author }}</a></em></p>
+    <img src="/assets/images/{{ page.thumbnail }}" class="img-fluid mx-auto d-block mb-3">
+
+    {{ content }}
+</div>
