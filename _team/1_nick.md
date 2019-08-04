@@ -6,7 +6,7 @@ github: https://github.com/NikolasEnt/
 kaggle: https://www.kaggle.com/nikolasent
 linkedin: https://www.linkedin.com/in/nikolay-falaleev-a1145a40/
 tags:
-  - ClubAI inspirer
+  - OniroAI (ClubAI) inspirer
   - Computer Vision R&D
   - Kaggle Master
 ---

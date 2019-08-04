@@ -6,7 +6,7 @@ github: https://github.com/voeykovroman
 kaggle: https://www.kaggle.com/voeykovroman
 linkedin: https://linkedin.com/in/roman-voeikov-890a0115b/
 tags:
-  - ClubAI member
+  - OniroAI member
   - Computer Vision R&D
   - Deep Learning professional
 ---

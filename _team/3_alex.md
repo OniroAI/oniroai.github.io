@@ -5,7 +5,7 @@ avatar: alex.jpg
 github: https://github.com/askorikov
 linkedin: https://www.linkedin.com/in/alexander-skorikov-b9250b170/
 tags:
-  - ClubAI member
+  - OniroAI member
   - Computer Vision R&D
   - Backyard champion in Deep Learning
 ---
