@@ -7,9 +7,6 @@ short_description:
     The network is designed to produce high quality depth predictions from a single image after learning from
     a training dataset of stereo images.
 ---
-
-# Monodepth
-
 __The project repo: [https://github.com/OniroAI/MonoDepth-PyTorch](https://github.com/OniroAI/MonoDepth-PyTorch)__
 
 Dense depth maps estimation is among crucial task for scene understanding, building perception system for mobile applications (e.q., for visual SLAM)  and many other uses. In general, it is impossible to produce a depth map by only one given frame. However, in real-world cases, humans can perceive depth with one eye by taking cues from relative objects sizes, perspective, and knowledge of the features of objects. That is why it worths a try to train a neural network to estimate a dense depth map by a monocular view.
