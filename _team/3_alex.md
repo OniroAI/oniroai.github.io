@@ -1,6 +1,6 @@
 ---
 short_name: alex
-full_name: Alexander Skorikov
+full_name: Alexander Skorikov, PhD
 avatar: alex.jpg
 github: https://github.com/askorikov
 linkedin: https://www.linkedin.com/in/alexander-skorikov-b9250b170/
@@ -11,4 +11,4 @@ tags:
 ---
 Physicist. Currently applying modeling and computer vision to study nanomaterials. Mostly interested in spectroscopic imaging and physically based computer vision, optimization theory, computer graphics and philosophy.
 
-Graduate of Lomonosov Moscow State University, PhD student at the University of Antwerp.
+Graduate of Lomonosov Moscow State University, PhD earned at the University of Antwerp.

@@ -12,7 +12,7 @@ tags:
 ---
 I work to bring Deep Learning solutions into sports and specialize in building
 powerful lightweight Neural Networks for multi-task applications and optimizing
-them for real-time implementation. I have 2+ years experience in the industry with
+them for real-time implementation. I have 3+ years experience in the industry with
 the main focus on solving problems of semantic segmentation, object-detection, OCR
 and action recognition.
 

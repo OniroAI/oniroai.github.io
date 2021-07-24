@@ -12,9 +12,9 @@ tags:
 ---
 Create Artificial Neural Networks and make them really fast.
 
-I'm a passionate Computer Vision researcher with 2+ years of experience. Deep
-learning, applied machine learning programming and numerical calculations are
-among the most common responsibilities in my projects.
+I'm a passionate Computer Vision researcher with 4+ years of experience. Deep
+learning, applied machine learning programming, and numerical calculations are
+among the most common capacities in my projects.
 
-I truly love to solve complex Computer Vision tasks with the Deep Learning
+I genuinely love to solve complex Computer Vision tasks with Deep Learning
 approaches and optimize pipelines for real-time inference.
