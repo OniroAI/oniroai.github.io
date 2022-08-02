@@ -4,12 +4,12 @@ title: Home page
 <div class="container mt-3">
     <h3>About us</h3>
     <hr>
-    <p>OniroAI is an independent team of passionate professionals and enthusiasts of applied 
-    Computer Vision and Artificial Intelligence. We are a union of friends inspired by the 
-    technologies of the future. Our collaboration is aimed at shaping the AI revolution through 
+    <p>OniroAI is an independent team of passionate professionals and enthusiasts of applied
+    Computer Vision and Artificial Intelligence. We are a union of friends inspired by the
+    technologies of the future. Our collaboration is aimed at shaping the AI revolution through
     conducting research, contributing to open source and spreading knowledge.</p>
-    <p>The core of our team is formed by a natural curiosity in combination with a fundamental 
-    interdisciplinary education. This gives us the inspiration to implement state-of-the-art 
+    <p>The core of our team is formed by a natural curiosity in combination with a fundamental
+    interdisciplinary education. This gives us the inspiration to implement state-of-the-art
     machine learning pipelines and push the boundaries of applied Artificial Intelligence.</p>
 </div>
 
@@ -18,13 +18,7 @@ title: Home page
     <hr>
     <div class="row justify-content-around small">
         {% for project in site.projects %}
-            <!-- Center the last column if it's odd -->
-            {% assign column_oddity = forloop.index | modulo: 2 %}
-            {% if forloop.last and column_oddity == 1 %}
-            <div class="col-sm-4 offset-sm-3 text-center">   
-            {% else %}
-            <div class="col-sm-4 text-center">
-            {% endif %}
+            <div class="col-lg-4 col-md-6 text-center">
                 <a href="{{ project.url }}" class="text-body text-decoration-none" {% if project.github %}github="{{ project.github }}"{% endif %}>
                     <img src="assets/images/{{ project.thumbnail }}" class="avatar rounded-circle">
                     <h5 class="my-2">{{ project.title }}</h4>
