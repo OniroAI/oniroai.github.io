@@ -18,7 +18,12 @@ title: Home page
     <hr>
     <div class="row justify-content-center small">
         {% for project in site.projects %}
-        <div class="col-lg-4 col-md-6 my-2 text-center">
+            {% assign n_cols_is_odd = site.projects.size | modulo:2 %}
+            {% if n_cols_is_odd == 1 %}
+                <div class="col-lg-4 col-md-6 my-2 text-center">
+            {% else %}
+                <div class="col-md-6 my-2 text-center">
+            {% endif %}
             <a href="{{ project.url }}" class="text-body text-decoration-none"
                {% if project.github %}github="{{ project.github }}" {% endif %}>
                 <img src="assets/images/{{ project.thumbnail }}" class="avatar rounded-circle">
