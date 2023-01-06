@@ -1,6 +1,7 @@
 ---
 title: Semantic Segmentation of Seismic Reflection
 thumbnail: seismic/seismic.png
+github: lRomul/argus-tgs-salt
 short_description:
     Deep learning based semantic segmentation of reflection seismology images for salt deposits recognition.
 ---

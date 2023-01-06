@@ -26,9 +26,9 @@ title: Home page
                     <p class="mt-2 mb-0">{{ project.short_description }}</p>
             </a>
             {% if project.github %}
-            <a href="https://github.com/{{ site.github_username }}/{{ project.github }}/stargazers"
+            <a href="https://github.com/{{ project.github }}/stargazers"
                 class="btn btn-light"><i class="fas fa-star"></i></a>
-            <a href="https://github.com/{{ site.github_username }}/{{ project.github }}/network"
+            <a href="https://github.com/{{ project.github }}/network"
                 class="btn btn-light"><i class="fas fa-code-branch"></i></a>
             {% endif %}
         </div>
