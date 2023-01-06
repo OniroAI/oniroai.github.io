@@ -5,12 +5,12 @@ title: Home page
     <h3>About us</h3>
     <hr>
     <p>OniroAI is an independent team of passionate professionals and enthusiasts of applied
-        Computer Vision and Artificial Intelligence. We are a union of friends inspired by the
-        technologies of the future. Our collaboration is aimed at shaping the AI revolution through
-        conducting research, contributing to open source and spreading knowledge.</p>
+       Computer Vision and Artificial Intelligence. We are a union of friends inspired by the
+       technologies of the future. Our collaboration is aimed at shaping the AI revolution through
+       conducting research, contributing to open source and spreading knowledge.</p>
     <p>The core of our team is formed by a natural curiosity in combination with a fundamental
-        interdisciplinary education. This gives us the inspiration to implement state-of-the-art
-        machine learning pipelines and push the boundaries of applied Artificial Intelligence.</p>
+       interdisciplinary education. This gives us the inspiration to implement state-of-the-art
+       machine learning pipelines and push the boundaries of applied Artificial Intelligence.</p>
 </div>
 
 <div class="container mt-5">
@@ -19,8 +19,8 @@ title: Home page
     <div class="row justify-content-center small">
         {% for project in site.projects %}
         <div class="col-lg-4 col-md-6 text-center">
-            <a href="{{ project.url }}" class="text-body text-decoration-none" {% if project.github
-                %}github="{{ project.github }}" {% endif %}>
+            <a href="{{ project.url }}" class="text-body text-decoration-none"
+               {% if project.github %}github="{{ project.github }}" {% endif %}>
                 <img src="assets/images/{{ project.thumbnail }}" class="avatar rounded-circle">
                 <h5 class="my-2">{{ project.title }}</h4>
                     <p class="mt-2 mb-0">{{ project.short_description }}</p>
@@ -49,8 +49,7 @@ title: Home page
             <p>
                 {% if member.github %}<a href="{{ member.github }}" class="fab fa-github btn btn-light"></a>{% endif %}
                 {% if member.kaggle %}<a href="{{ member.kaggle }}" class="fab fa-kaggle btn btn-light"></a>{% endif %}
-                {% if member.linkedin %}<a href="{{ member.linkedin }}" class="fab fa-linkedin btn btn-light"></a>{%
-                endif %}
+                {% if member.linkedin %}<a href="{{ member.linkedin }}" class="fab fa-linkedin btn btn-light"></a>{% endif %}
             </p>
         </div>
         {% endfor %}
