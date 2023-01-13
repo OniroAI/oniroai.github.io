@@ -8,3 +8,5 @@ short_description:
   network and submitting the final file. The developed functionality can be used as a universal
   high-quality baseline solution for any segmentation task."
 ---
+
+__This project repo is on [Github](https://github.com/OniroAI/Universal-segmentation-baseline-Kaggle-Airbus-Ship-Detection).__
